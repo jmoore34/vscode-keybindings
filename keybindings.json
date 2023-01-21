@@ -1,0 +1,138 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+b",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+alt+]",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+[",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "-editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "workbench.action.nextSideBarView"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "workbench.action.previousSideBarView"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "shift+backspace",
+        "command": "-deleteLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-git.commitAll",
+        "when": "!commitInProgress && !inDebugMode && !terminalFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "-workbench.action.keybindingsReference"
+    },
+    {
+        "key": "shift+numpad_decimal",
+        "command": "git.revertSelectedRanges"
+    },
+    {
+        "key": "shift+numpad_subtract",
+        "command": "git.unstageSelectedRanges",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "shift+numpad4",
+        "command": "workbench.action.editor.previousChange"
+    },
+    {
+        "key": "shift+numpad6",
+        "command": "workbench.action.editor.nextChange"
+    },
+    {
+        "key": "shift+numpad_add",
+        "command": "git.stageSelectedRanges",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "shift+numpad6",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "shift+numpad4",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+
+]
