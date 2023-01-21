@@ -134,5 +134,19 @@
         "command": "workbench.action.compareEditor.nextChange",
         "when": "textCompareEditorVisible"
     },
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.terminal.focus",
+        "when": "terminalHasBeenCreated && !terminalFocus || terminalProcessSupported && !terminalFocus"
+    },
+    {
+        "key": "alt+f12",
+        "command": "-workbench.action.terminal.focus",
+        "when": "terminalHasBeenCreated && !terminalFocus || terminalProcessSupported && !terminalFocus"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.selectTheme"
+    },
 
 ]
