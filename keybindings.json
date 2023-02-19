@@ -11,12 +11,12 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "shift+alt+]",
+        "key": "shift+numpad_add",
         "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
     {
-        "key": "shift+alt+[",
+        "key": "shift+numpad_subtract",
         "command": "editor.action.smartSelect.shrink",
         "when": "editorTextFocus"
     },
@@ -103,36 +103,126 @@
         "command": "-workbench.action.keybindingsReference"
     },
     {
-        "key": "shift+numpad_decimal",
+        "key": "ctrl+numpad_decimal",
         "command": "git.revertSelectedRanges"
     },
     {
-        "key": "shift+numpad_subtract",
+        "key": "ctrl+numpad_subtract",
         "command": "git.unstageSelectedRanges",
         "when": "isInDiffEditor"
     },
     {
-        "key": "shift+numpad4",
+        "key": "ctrl+numpad4",
         "command": "workbench.action.editor.previousChange"
     },
     {
-        "key": "shift+numpad6",
+        "key": "ctrl+numpad6",
         "command": "workbench.action.editor.nextChange"
     },
     {
-        "key": "shift+numpad_add",
+        "key": "ctrl+numpad_add",
         "command": "git.stageSelectedRanges",
         "when": "isInDiffEditor"
     },
     {
-        "key": "shift+numpad6",
+        "key": "ctrl+numpad6",
         "command": "workbench.action.compareEditor.nextChange",
         "when": "textCompareEditorVisible"
     },
     {
-        "key": "shift+numpad4",
+        "key": "ctrl+numpad4",
         "command": "workbench.action.compareEditor.nextChange",
         "when": "textCompareEditorVisible"
     },
-
+    {
+        "key": "alt+n",
+        "command": "dendron.lookupNote",
+        "when": "dendron:pluginActive"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-dendron.lookupNote",
+        "when": "dendron:pluginActive"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build",
+        "when": "taskCommandsRegistered"
+    },
+    {
+        "key": "ctrl+numpad3",
+        "command": "bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+l",
+        "command": "-bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+numpad1",
+        "command": "bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+j",
+        "command": "-bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+numpad2",
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+k",
+        "command": "-bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+numpad5",
+        "command": "git-graph.view"
+    },
+    {
+        "key": "ctrl+numpad9",
+        "command": "workbench.action.terminal.focusNext",
+        // "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus || terminalFocus && terminalHasBeenCreated && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+numpad7",
+        "command": "workbench.action.terminal.focusPrevious",
+        // "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+numpad8",
+        "command": "workbench.action.tasks.runTask",
+        "when": "taskCommandsRegistered"
+    },
+    {
+        "key": "ctrl+numpad_multiply",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+numpad_divide",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "ctrl+shift+numpad8",
+        "command": "workbench.action.tasks.restartTask"
+    },
+    {
+        "key": "shift+backspace",
+        "command": "deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "seito-openfile.openFileFromText",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+q",
+        "command": "-seito-openfile.openFileLikeThisFile"
+    }
 ]
