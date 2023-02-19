@@ -135,16 +135,6 @@
         "when": "textCompareEditorVisible"
     },
     {
-        "key": "alt+n",
-        "command": "dendron.lookupNote",
-        "when": "dendron:pluginActive"
-    },
-    {
-        "key": "cmd+l",
-        "command": "-dendron.lookupNote",
-        "when": "dendron:pluginActive"
-    },
-    {
         "key": "ctrl+shift+b",
         "command": "-workbench.action.tasks.build",
         "when": "taskCommandsRegistered"
