@@ -214,5 +214,9 @@
     {
         "key": "alt+q",
         "command": "-seito-openfile.openFileLikeThisFile"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.showAllSymbols"
     }
 ]
