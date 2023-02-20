@@ -170,7 +170,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+numpad5",
+        "key": "ctrl+shift+numpad5",
         "command": "git-graph.view"
     },
     {
@@ -218,5 +218,10 @@
     {
         "key": "ctrl+n",
         "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+numpad5",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
     }
 ]
