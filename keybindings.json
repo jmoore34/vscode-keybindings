@@ -21,14 +21,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+left",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+alt+right",
-        "command": "workbench.action.nextEditor"
-    },
-    {
         "key": "ctrl+alt+right",
         "command": "-workbench.action.moveEditorToNextGroup"
     },
@@ -150,7 +142,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+numpad1",
+        "key": "ctrl+[",
         "command": "bookmarks.jumpToPrevious",
         "when": "editorTextFocus"
     },
@@ -202,11 +194,6 @@
         "command": "workbench.action.tasks.restartTask"
     },
     {
-        "key": "shift+backspace",
-        "command": "deleteWordPartLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
         "key": "shift+alt+q",
         "command": "seito-openfile.openFileFromText",
         "when": "editorTextFocus"
@@ -220,7 +207,7 @@
         "command": "-workbench.action.showAllSymbols"
     },
     {
-        "key": "ctrl+numpad5",
+        "key": "shift+cmd+g shift+cmd+g",
         "command": "workbench.view.scm",
         "when": "workbench.scm.active"
     },
@@ -258,5 +245,240 @@
         "key": "alt+a",
         "command": "seito-openfile.openFileFromText",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-cursorUndo",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+\\ c",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "import Test.Common.Config\u000aimport Test.Common.Database\u000a\u000awithOrvilleEnv (runDemoLocal . "
+        }
+    },
+    {
+        "key": "alt+numpad1",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+numpad3",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+alt+numpad1",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+alt+numpad3",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorWordPartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "cursorWordPartLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+numpad2",
+        "command": "workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+alt+numpad2",
+        "command": "workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+shift+alt+numpad3",
+        "command": "workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+numpad1",
+        "command": "workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "ctrl+\\ \\",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "shift+numpad3",
+        "command": "search.action.focusNextSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "shift+numpad1",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+backspace",
+        "command": "-deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+\\ /",
+        "command": "rewrap.rewrapComment",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "alt+`",
+        "command": "metaGo.gotoSmart"
+    },
+    {
+        "key": "ctrl+alt+[",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+alt+]",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+alt+'",
+        "command": "workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+alt+'",
+        "command": "workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+shift+alt+[",
+        "command": "workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+]",
+        "command": "workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "alt+p",
+        "command": "-seito-openfile.openFileFromText",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+home",
+        "command": "-breadcrumbs.focus",
+        "when": "breadcrumbsPossible && breadcrumbsVisible"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "multiCommand.commentDown"
+    },
+    {
+        "key": "cmd+[",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+]",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+numpad1",
+        "command": "bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+[",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+alt+cmd+]",
+        "command": "workbench.action.closeEditorsToTheRight"
+    },
+    {
+        "key": "ctrl+alt+cmd+numpad3",
+        "command": "workbench.action.closeEditorsToTheRight"
+    },
+    {
+        "key": "ctrl+alt+cmd+[",
+        "command": "workbench.action.closeEditorsToTheLeft"
+    },
+    {
+        "key": "ctrl+alt+cmd+numpad1",
+        "command": "workbench.action.closeEditorsToTheLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     }
 ]
