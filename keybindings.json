@@ -259,8 +259,12 @@
         "key": "ctrl+\\ c",
         "command": "workbench.action.terminal.sendSequence",
         "args": {
-            "text": "import Test.Common.Config\u000aimport Test.Common.Database\u000a\u000awithOrvilleEnv (runDemoLocal . "
+          "text": "import Test.Common.Config\u000aimport Test.Common.Database\u000a\u000awithOrvilleEnv (runDemoLocal . "
         }
+    },
+    {
+        "key": "ctrl+\\ shift+c",
+        "command": "multiCommand.importAndRunClearBoxTest"
     },
     {
         "key": "alt+numpad1",
@@ -489,5 +493,41 @@
         "key": "ctrl+\\ r",
         "command": "run.ahk",
         "when": "editorLangId == 'ahk'"
+    },
+    {
+        "key": "alt+g",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "alt+1",
+        "command": "editor.action.clipboardCopyWithSyntaxHighlightingAction"
+    },
+    {
+        "key": "ctrl+\\ m",
+        "command": "multiCommand.copyModule"
+    },
+    {
+        "key": "ctrl+\\ i",
+        "command": "multiCommand.importCurrentModule"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "tab",
+        "command": "markdowntable.nextCell",
+        "when": "editorTextFocus && markdowntable.contextkey.selection.InMarkdownTable && !editorReadonly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "markdowntable.prevCell",
+        "when": "editorTextFocus && markdowntable.contextkey.selection.InMarkdownTable && !editorReadonly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
     }
 ]
