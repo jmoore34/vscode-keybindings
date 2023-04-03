@@ -736,5 +736,10 @@
         "key": "ctrl+shift+cmd+]",
         "command": "editor.action.marker.nextInFiles",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+[",
+        "command": "editor.action.marker.prevInFiles",
+        "when": "editorFocus"
     }
 ]
