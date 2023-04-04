@@ -620,5 +620,14 @@
         "key": "ctrl+p",
         "command": "-editor.action.triggerParameterHints",
         "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+\\ w",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
     }
 ]
