@@ -162,7 +162,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+numpad5",
+        "key": "ctrl+numpad5",
         "command": "git-graph.view"
     },
     {
@@ -259,8 +259,12 @@
         "key": "ctrl+\\ c",
         "command": "workbench.action.terminal.sendSequence",
         "args": {
-            "text": "import Test.Common.Config\u000aimport Test.Common.Database\u000a\u000awithOrvilleEnv (runDemoLocal . "
+          "text": "import Test.Common.Config\u000aimport Test.Common.Database\u000a\u000awithOrvilleEnv (runDemoLocal . "
         }
+    },
+    {
+        "key": "ctrl+\\ shift+c",
+        "command": "multiCommand.importAndRunClearBoxTest"
     },
     {
         "key": "alt+numpad1",
@@ -620,6 +624,123 @@
         "key": "ctrl+p",
         "command": "-editor.action.triggerParameterHints",
         "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "alt+g",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+\\ m",
+        "command": "multiCommand.copyModule"
+    },
+    {
+        "key": "ctrl+\\ i",
+        "command": "multiCommand.importCurrentModule"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "tab",
+        "command": "markdowntable.nextCell",
+        "when": "editorTextFocus && markdowntable.contextkey.selection.InMarkdownTable && !editorReadonly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "markdowntable.prevCell",
+        "when": "editorTextFocus && markdowntable.contextkey.selection.InMarkdownTable && !editorReadonly && !editorTabMovesFocus && !inSnippetMode && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+r",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f12",
+        "command": "metaGo.gotoSmart"
+    },
+    {
+        "key": "shift+f12",
+        "command": "metaGo.selectSmart",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+[",
+        "command": "editor.action.marker.prev",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+numpad6",
+        "command": "editor.action.marker.nextInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+numpad4",
+        "command": "editor.action.marker.prevInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+numpad5",
+        "command": "workbench.action.problems.focus"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "nextlocation"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "search.action.focusNextSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "ctrl+cmd+]",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "editor.action.marker.prev",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+]",
+        "command": "editor.action.marker.nextInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+[",
+        "command": "editor.action.marker.prevInFiles",
+        "when": "editorFocus"
     },
     {
         "key": "ctrl+y",
