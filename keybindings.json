@@ -754,6 +754,15 @@
         "when": "editorFocus"
     },
     {
+        "key": "ctrl+y",
+        "command": "-editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+\\ w",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
+    },
+    {
         "key": "cmd+r",
         "command": "workbench.action.openRecent"
     },
