@@ -263,6 +263,13 @@
         }
     },
     {
+        "key": "ctrl+\\ b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+          "text": "import Test.Common.Config\u000arunDemoLocal "
+        }
+    },
+    {
         "key": "ctrl+\\ shift+c",
         "command": "multiCommand.importAndRunClearBoxTest"
     },
@@ -638,6 +645,10 @@
         "command": "multiCommand.importCurrentModule"
     },
     {
+        "key": "ctrl+\\ l",
+        "command": "multiCommand.importCurrentModule"
+    },
+    {
         "key": "ctrl+h",
         "command": "editor.action.showHover",
         "when": "editorTextFocus"
@@ -741,5 +752,26 @@
         "key": "ctrl+shift+cmd+[",
         "command": "editor.action.marker.prevInFiles",
         "when": "editorFocus"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "alt+cmd+]",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "alt+cmd+[",
+        "command": "workbench.action.editor.previousChange"
+    },
+    {
+        "key": "ctrl+alt+cmd+'",
+        "command": "bookmarks.clearFromAllFiles"
     }
 ]
