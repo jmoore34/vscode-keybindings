@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "ctrl+a",
+        "key": "ctrl+'",
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
@@ -324,7 +324,7 @@
         "command": "multiCommand.commentDown"
     },
     {
-        "key": "alt+tab",
+        "key": "alt+[",
         "command": "editor.action.outdentLines",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -338,7 +338,7 @@
         "command": "-editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly"
     },{
-        "key": "ctrl+tab",
+        "key": "alt+]",
         "command": "editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -648,10 +648,6 @@
         "when": "inKeybindings && inKeybindingsSearch"
     },
     {
-        "key": "alt+g",
-        "command": "workbench.action.gotoLine"
-    },
-    {
         "key": "cmd+alt+]",
         "command": "workbench.action.editor.nextChange"
     },
@@ -878,11 +874,87 @@
         "command": "workbench.action.closeOtherEditors"
     },
     {
-        "key": "alt+h",
-        "command": "workbench.action.navigateBackInEditLocations"
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "alt+e",
-        "command": "workbench.action.navigateForwardInEditLocations"
+        "key": "ctrl+b",
+        "command": "-cursorLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+i",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-cursorWordLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-cursorWordLeftSelect",
+        "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "cursorWordPartStartLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-cursorWordPartStartLeftSelect",
+        "when": "config.intellij-idea-keybindings.useCamelHumpsWords && editorTextFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-cursorWordRightSelect",
+        "when": "editorTextFocus && !config.intellij-idea-keybindings.useCamelHumpsWords"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-cursorWordEndRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "cursorWordPartRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-cursorWordPartRightSelect",
+        "when": "config.intellij-idea-keybindings.useCamelHumpsWords && editorTextFocus"
+    },
+    {
+        "key": "escape escape",
+        "command": "-workbench.action.exitZenMode",
+        "when": "inZenMode"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "editor.action.goToTypeDefinition",
+        "when": "editorHasTypeDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-editor.action.goToTypeDefinition",
+        "when": "editorHasTypeDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     }
 ]
