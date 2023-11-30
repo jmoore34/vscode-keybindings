@@ -376,10 +376,6 @@
         "when": "canNavigateForward"
     },
     {
-        "key": "alt+`",
-        "command": "metaGo.gotoSmart"
-    },
-    {
         "key": "ctrl+alt+[",
         "command": "workbench.action.previousEditor"
     },
@@ -681,11 +677,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "f12",
-        "command": "metaGo.gotoSmart"
-    },
-    {
-        "key": "shift+f12",
+        "key": "shift+f13",
         "command": "metaGo.selectSmart",
         "when": "editorTextFocus"
     },
@@ -750,5 +742,34 @@
     {
         "key": "ctrl+\\ w",
         "command": "editor.emmet.action.wrapWithAbbreviation"
+    },
+    {
+        "key": "alt+f",
+        "command": "git.openFile",
+        "when": "inDiffEditor"
+    },
+    {
+        "key": "ctrl+alt+win+k",
+        "command": "keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings"
+    },
+    {
+        "key": "alt+k",
+        "command": "-keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    {
+        "key": "f13",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.gotoNextSymbolFromResult",
+        "when": "hasSymbols"
+    },
+    {
+        "key": "f12",
+        "command": "-goToNextReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
     }
 ]
