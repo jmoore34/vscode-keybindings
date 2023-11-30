@@ -6,7 +6,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "f12",
+        "key": "",
         "command": "-editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
@@ -59,7 +59,7 @@
         "command": "-workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "alt+f12",
+        "key": "alt+f13",
         "command": "workbench.action.toggleZenMode"
     },
     {
@@ -660,7 +660,7 @@
         "command": "workbench.action.toggleStatusbarVisibility"
     },
     {
-        "key": "alt+f12",
+        "key": "alt+f13",
         "command": "multiCommand.doubleZenMode",
         "when": "inZenMode"
     },
@@ -956,5 +956,34 @@
         "key": "ctrl+shift+b",
         "command": "-editor.action.goToTypeDefinition",
         "when": "editorHasTypeDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+f",
+        "command": "git.openFile",
+        "when": "inDiffEditor"
+    },
+    {
+        "key": "ctrl+alt+win+k",
+        "command": "keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings"
+    },
+    {
+        "key": "alt+k",
+        "command": "-keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    {
+        "key": "f13",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.gotoNextSymbolFromResult",
+        "when": "hasSymbols"
+    },
+    {
+        "key": "f12",
+        "command": "-goToNextReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
     }
 ]
