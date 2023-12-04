@@ -6,11 +6,6 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
         "key": "ctrl+cmd+right",
         "command": "-workbench.action.moveEditorToNextGroup"
     },
@@ -32,7 +27,7 @@
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+cmd+l",
+        "key": "alt+f",
         "command": "editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
@@ -629,9 +624,9 @@
         "command": "editor.action.transformToLowercase"
     },
     {
-        "key": "cmd+f",
+        "key": "alt+f",
         "command": "gitlens.openWorkingFile",
-        "when": "inDiffEditor"
+        "when": "inDiffEditor || !editorTextFocus"
     },
     {
         "key": "ctrl+j",
@@ -985,5 +980,10 @@
         "key": "f12",
         "command": "-goToNextReference",
         "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "alt+f",
+        "command": "gitlens.openWorkingFile",
+        "when": "inDiffEditor"
     }
 ]
