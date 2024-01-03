@@ -1,11 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "ctrl+'",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
         "key": "ctrl+cmd+right",
         "command": "-workbench.action.moveEditorToNextGroup"
     },
@@ -22,7 +17,7 @@
         "command": "-workbench.action.nextEditor"
     },
     {
-        "key": "ctrl+;",
+        "key": "cmd+r",
         "command": "editor.action.rename",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     },
@@ -271,9 +266,9 @@
         "command": "workbench.action.splitEditor"
     },
     {
-        "key": "cmd+pagedown",
+        "key": "alt+pagedown",
         "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "hasSearchResult"
     },
     {
         "key": "alt+backspace",
@@ -566,12 +561,12 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+shift+alt+]",
+        "key": "ctrl+;",
         "command": "editor.action.marker.nextInFiles",
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+shift+alt+[",
+        "key": "ctrl+'",
         "command": "editor.action.marker.prevInFiles",
         "when": "editorFocus"
     },
@@ -985,5 +980,89 @@
         "key": "alt+f",
         "command": "gitlens.openWorkingFile",
         "when": "inDiffEditor"
+    },
+    {
+        "key": "f5",
+        "command": "git.refresh"
+    },
+    {
+        "key": "f7",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "f6",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "-editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "-editor.action.duplicateSelection",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "-toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "toggleSearchCaseSensitive",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "-toggleSearchCaseSensitive",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "workbench.action.terminal.toggleFindCaseSensitive",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalFindFocused && terminalHasBeenCreated && terminalProcessSupported || terminalFocus && terminalHasBeenCreated && terminalProcessSupported"
+    },
+    {
+        "key": "alt+c",
+        "command": "-workbench.action.terminal.toggleFindCaseSensitive",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalFindFocused && terminalHasBeenCreated && terminalProcessSupported || terminalFocus && terminalHasBeenCreated && terminalProcessSupported"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "toggleSearchEditorCaseSensitive",
+        "when": "inSearchEditor && searchInputBoxFocus"
+    },
+    {
+        "key": "alt+cmd+c",
+        "command": "-toggleSearchEditorCaseSensitive",
+        "when": "inSearchEditor && searchInputBoxFocus"
+    },
+    {
+        "key": "cmd+r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "shift+f6",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
     }
 ]
