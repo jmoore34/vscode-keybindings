@@ -17,7 +17,7 @@
         "command": "-workbench.action.nextEditor"
     },
     {
-        "key": "cmd+r",
+        "key": "alt+r",
         "command": "editor.action.rename",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     },
@@ -99,18 +99,8 @@
         "when": "taskCommandsRegistered"
     },
     {
-        "key": "ctrl+numpad3",
-        "command": "bookmarks.jumpToNext",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "cmd+alt+l",
         "command": "-bookmarks.jumpToNext",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+[",
-        "command": "bookmarks.jumpToPrevious",
         "when": "editorTextFocus"
     },
     {
@@ -177,14 +167,14 @@
         "key": "ctrl+\\ c",
         "command": "workbench.action.terminal.sendSequence",
         "args": {
-          "text": "import Test.Common.Config\u000aimport Test.Common.Database\u000a\u000awithOrvilleEnv (runDemoLocal . "
+            "text": "import Test.Common.Config\u000aimport Test.Common.Database\u000a\u000awithOrvilleEnv (runDemoLocal . "
         }
     },
     {
         "key": "ctrl+\\ b",
         "command": "workbench.action.terminal.sendSequence",
         "args": {
-          "text": "import Test.Common.Config\u000arunDemoLocal "
+            "text": "import Test.Common.Config\u000arunDemoLocal "
         }
     },
     {
@@ -242,16 +232,6 @@
         "key": "shift+cmd+right",
         "command": "cursorWordPartRightSelect",
         "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+f10",
-        "command": "workbench.action.pinEditor",
-        "when": "!activeEditorIsPinned"
-    },
-    {
-        "key": "ctrl+f10",
-        "command": "workbench.action.unpinEditor",
-        "when": "activeEditorIsPinned"
     },
     {
         "key": "shift+f10",
@@ -327,22 +307,18 @@
         "key": "ctrl+]",
         "command": "-editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly"
-    },{
+    },
+    {
         "key": "alt+]",
         "command": "editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+]",
-        "command": "bookmarks.jumpToNext",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+f10",
+        "key": "ctrl+f10",
         "command": "workbench.action.closeEditorsToTheRight"
     },
     {
-        "key": "ctrl+alt+f9",
+        "key": "ctrl+f9",
         "command": "workbench.action.closeEditorsToTheLeft"
     },
     {
@@ -580,7 +556,7 @@
         "command": "editor.emmet.action.wrapWithAbbreviation"
     },
     {
-        "key": "alt+r",
+        "key": "ctrl+shift+r",
         "command": "workbench.action.openRecent"
     },
     {
@@ -711,11 +687,6 @@
     {
         "key": "cmd+a",
         "command": "-editor.action.selectAll"
-    },
-    {
-        "key": "cmd+f12",
-        "command": "seito-openfile.openFileFromText",
-        "when": "editorTextFocus"
     },
     {
         "key": "cmd+a",
@@ -1064,5 +1035,59 @@
         "key": "shift+f6",
         "command": "-renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "-toggleSearchEditorCaseSensitive",
+        "when": "inSearchEditor && searchInputBoxFocus"
+    },
+    {
+        "key": "f8",
+        "command": "extension.togglePinEditor"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "httpyac.send",
+        "when": "editorTextFocus && editorLangId in 'httpyac.supportedLanguages'"
+    },
+    {
+        "key": "alt+p",
+        "command": "-metaGo.changeSurroundingPair",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+p",
+        "command": "-togglePreserveCase",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+'",
+        "command": "-metaGo.bookmark.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+'",
+        "command": "bracket-select.select",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+a",
+        "command": "-bracket-select.select",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+z",
+        "command": "-bracket-select.undo-select",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+;",
+        "command": "select-indentation.expand-selection",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-select-indentation.expand-selection",
+        "when": "editorTextFocus"
     }
 ]
