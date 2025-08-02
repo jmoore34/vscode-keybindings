@@ -938,6 +938,10 @@
         "command": "workbench.action.showCommands"
     },
     {
+        "key": "insert",
+        "command": "workbench.action.showCommands"
+    },
+    {
         "key": "f12",
         "command": "-editor.gotoNextSymbolFromResult",
         "when": "hasSymbols"
@@ -1027,7 +1031,7 @@
         "when": "inSearchEditor && searchInputBoxFocus"
     },
     {
-        "key": "cmd+r",
+        "key": "alt+r",
         "command": "renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus"
     },
@@ -1089,5 +1093,88 @@
         "key": "ctrl+shift+h",
         "command": "-select-indentation.expand-selection",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-editor.toggleFold",
+        "when": "editorFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+backspace",
+        "command": "-workbench.action.navigateToLastEditLocation"
+    },
+    {
+        "key": "shift+backspace",
+        "command": "-deleteAllLeft",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+g shift+.",
+        "command": "-gitlens.diffWithWorking",
+        "when": "editorTextFocus && gitlens:enabled && config.gitlens.keymap == 'chorded' && resourceScheme =~ /^(gitlens|git|pr)$/"
+    },
+    {
+        "key": "ctrl+shift+g shift+,",
+        "command": "-gitlens.diffLineWithPrevious",
+        "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "ctrl+shift+g b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:blameable'"
+    },
+    {
+        "key": "ctrl+shift+g .",
+        "command": "-gitlens.diffWithNext",
+        "when": "editorTextFocus && gitlens:enabled && !isInDiffEditor && config.gitlens.keymap == 'chorded' && resourceScheme =~ /^(gitlens|git|pr)$/"
+    },
+    {
+        "key": "ctrl+shift+g .",
+        "command": "-gitlens.diffWithNextInDiffLeft",
+        "when": "editorTextFocus && gitlens:enabled && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resourceScheme =~ /^(gitlens|git|pr)$/"
+    },
+    {
+        "key": "ctrl+shift+g .",
+        "command": "-gitlens.diffWithNextInDiffRight",
+        "when": "editorTextFocus && gitlens:enabled && isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resourceScheme =~ /^(gitlens|git|pr)$/"
+    },
+    {
+        "key": "ctrl+shift+g ,",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "ctrl+shift+g ,",
+        "command": "-gitlens.diffWithPreviousInDiffLeft",
+        "when": "editorTextFocus && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "ctrl+shift+g ,",
+        "command": "-gitlens.diffWithPreviousInDiffRight",
+        "when": "editorTextFocus && isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.action.terminal.openDetectedLink",
+        "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "git.checkout",
+        "when": "!operationInProgress"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.files.action.compareFileWith",
+        "when": "activeEditor && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus && !listMultiSelection"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-compareSelected",
+        "when": "filesExplorerFocus && listDoubleSelection && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.scm.focus"
     }
 ]
